@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .active-menu {
+        @apply flex justify-center items-center w-10 h-10 lg:w-14 lg:h-14 rounded-xl transform duration-300 bg-indigo-50 text-red-500 -translate-y-8 lg:-translate-y-0 lg:translate-x-8 shadow-2xl;
+    }
+    .non-active-menu {
+        @apply flex justify-center items-center w-10 h-10 lg:w-14 lg:h-14 rounded-xl transform duration-300 text-white opacity-50 hover:bg-white hover:opacity-100 hover:text-blue-800 hover:-translate-y-8 lg:hover:translate-x-8 lg:hover:-translate-y-0 hover:shadow-xl;
+    }
+}
